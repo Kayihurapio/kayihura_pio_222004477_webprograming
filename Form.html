@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkgreen; /* Setting dark green background color */
+            color: #fff; /* Setting text color to white for better contrast */
+            padding: 20px; /* Adding padding for better spacing */
+        }
+
+        form {
+            max-width: 400px; /* Limiting the width of the form */
+            margin: 0 auto; /* Centering the form horizontally */
+        }
+
+        label {
+            display: block; /* Displaying labels as block elements */
+            margin-bottom: 5px; /* Adding margin-bottom to labels */
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%; /* Making inputs and selects full-width */
+            padding: 8px; /* Adding padding to inputs and selects */
+            margin-bottom: 10px; /* Adding margin-bottom to inputs and selects */
+            box-sizing: border-box; /* Including padding and border in the width */
+        }
+
+        input[type="submit"] {
+            background-color: darkgreen; /* Dark green background color for submit button */
+            color: white; /* Text color for submit button */
+            padding: 10px 20px; /* Adding padding to submit button */
+            border: none; /* Removing border from submit button */
+            cursor: pointer; /* Changing cursor to pointer on hover */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #006400; /* Darker green background color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="POST">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required>
+
+    <label for="phone-no">Phone No:</label>
+    <input type="text" id="phone-no" name="phone-no" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <label for="location">Location:</label>
+    <select id="location" name="location">
+        <option value="huye">Huye</option>
+        <option value="muhanga">Muhanga</option>
+        <option value="kamonyi">Kamonyi</option>
+        <option value="kigali">Kigali</option>
+    </select>
+
+    <label for="language">Preferred Language:</label><br>
+    <input type="radio" id="english" name="language" value="english" required>
+    <label for="english">English</label>
+    <input type="radio" id="french" name="language" value="french">
+    <label for="french">French</label>
+    <input type="radio" id="kinyarwanda" name="language" value="kinyarwanda">
+    <label for="kinyarwanda">Kinyarwanda</label>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

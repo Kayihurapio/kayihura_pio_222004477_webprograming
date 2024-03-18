@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>table</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%; /* Adjust the width of the table as needed */
+        margin: 0 auto; /* Center the table horizontally */
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid darkgreen;
+    }
+
+    th {
+        background-color: darkgreen;
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    td button {
+        background-color: darkgreen;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    td button:hover {
+        background-color: #006400;
+    }
+</style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Location</th>
+                <th>Marital Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Kayihura</td>
+                <td>Pio</td>
+                <td>35</td>
+                <td>M</td>
+                <td>Kigali</td>
+                <td>Married</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Kayitesi</td>
+                <td>Alice</td>
+                <td>30</td>
+                <td>F</td>
+                <td>Butare</td>
+                <td>Single</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
